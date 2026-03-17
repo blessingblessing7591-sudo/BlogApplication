@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BlogApp • Admin Login</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <div id="topbar"></div>
+    <main class="container">
+      <div class="hero">
+        <div>
+          <h1>Admin Login</h1>
+          <p>Admins only. This login takes you to the Manage page.</p>
+        </div>
+        <div class="chip">username: admin • password: admin@123</div>
+      </div>
+
+      <div id="notice" class="notice" hidden></div>
+
+      <form class="card form" id="adminForm">
+        <label>
+          Username
+          <input name="username" type="text" autocomplete="username" required />
+        </label>
+        <label>
+          Password
+          <input name="password" type="password" autocomplete="current-password" required />
+        </label>
+        <div class="row">
+          <button class="btn danger" type="submit">Login as Admin</button>
+          <a href="/login.html">User login</a>
+        </div>
+      </form>
+    </main>
+
+    <script type="module" src="/assets/pages/adminAuth.js"></script>
+  </body>
+</html>
+

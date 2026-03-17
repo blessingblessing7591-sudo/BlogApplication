@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BlogApp • Edit</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <div id="topbar"></div>
+    <main class="container">
+      <div class="hero">
+        <div>
+          <h1>Edit post</h1>
+          <p>RBAC is enforced server-side: owner or Admin only.</p>
+        </div>
+        <div class="chip" id="postIdChip" hidden></div>
+      </div>
+
+      <div id="notice" class="notice" hidden></div>
+
+      <form class="card form" id="editForm">
+        <label>
+          Title
+          <input name="title" type="text" required minlength="3" />
+        </label>
+        <label>
+          Content
+          <textarea name="content" required minlength="10"></textarea>
+        </label>
+        <div class="row">
+          <button class="btn primary" type="submit">Save changes</button>
+          <a href="/index.html">Back to dashboard</a>
+        </div>
+      </form>
+    </main>
+
+    <script type="module" src="/assets/pages/edit.js"></script>
+  </body>
+</html>
+

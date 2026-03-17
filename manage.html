@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BlogApp • Manage (Admin)</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <div id="topbar"></div>
+    <main class="container">
+      <div class="hero">
+        <div>
+          <h1>Manage • All Posts</h1>
+          <p>Admin-only view. You can edit or delete any post in the system.</p>
+        </div>
+        <div class="chip">Admins only</div>
+      </div>
+
+      <div id="notice" class="notice" hidden></div>
+      <div id="posts" class="grid"></div>
+      <div id="empty" class="empty" hidden>No posts yet.</div>
+    </main>
+
+    <script type="module" src="/assets/pages/manage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BlogApp • Create</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <div id="topbar"></div>
+    <main class="container">
+      <div class="hero">
+        <div>
+          <h1>Create post</h1>
+          <p>Write something worth reading. Minimum content length is 10 characters.</p>
+        </div>
+      </div>
+
+      <div id="notice" class="notice" hidden></div>
+
+      <form class="card form" id="createForm">
+        <label>
+          Title
+          <input name="title" type="text" required minlength="3" />
+        </label>
+        <label>
+          Content
+          <textarea name="content" required minlength="10"></textarea>
+        </label>
+        <div class="row">
+          <button class="btn primary" type="submit">Publish</button>
+          <a href="/index.html">Back to dashboard</a>
+        </div>
+      </form>
+    </main>
+
+    <script type="module" src="/assets/pages/create.js"></script>
+  </body>
+</html>
+

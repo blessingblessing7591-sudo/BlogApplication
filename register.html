@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BlogApp • Register</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <div id="topbar"></div>
+    <main class="container">
+      <div class="hero">
+        <div>
+          <h1>Create account</h1>
+          <p>Register to start creating posts.</p>
+        </div>
+      </div>
+
+      <div id="notice" class="notice" hidden></div>
+
+      <form class="card form" id="authForm" data-mode="register">
+        <label>
+          Email
+          <input name="email" type="email" autocomplete="email" required />
+        </label>
+        <label>
+          Password
+          <input name="password" type="password" autocomplete="new-password" required minlength="6" />
+        </label>
+        <div class="row">
+          <button class="btn success" type="submit">Register</button>
+          <a href="/login.html">Already have an account?</a>
+        </div>
+      </form>
+    </main>
+
+    <script type="module" src="/assets/pages/auth.js"></script>
+  </body>
+</html>
+

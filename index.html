@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BlogApp • Dashboard</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <div id="topbar"></div>
+    <main class="container">
+      <div class="hero">
+        <div>
+          <h1>Dashboard</h1>
+          <p>All posts. Edit/delete is available only for the owner (or Admin).</p>
+        </div>
+        <div class="chip" id="roleChip" hidden></div>
+      </div>
+
+      <div id="notice" class="notice" hidden></div>
+      <div id="posts" class="grid"></div>
+      <div id="empty" class="empty" hidden>No posts yet.</div>
+    </main>
+
+    <script type="module" src="/assets/pages/dashboard.js"></script>
+  </body>
+</html>
+
